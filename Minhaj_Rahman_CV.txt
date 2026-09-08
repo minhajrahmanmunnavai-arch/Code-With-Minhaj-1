@@ -1,0 +1,26 @@
+Minhaj Rahman
+Front-End Developer
+
+Email: minhajrahaman71@gmail.com
+Phone: +8801704791140
+Location: Dinajpur, Rangpur Division, Bangladesh
+
+Profile:
+Front-End Developer passionate about building clean, responsive, and user-friendly web interfaces using HTML, CSS, JavaScript, and modern front-end techniques.
+
+Skills:
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- Git & GitHub
+
+Experience:
+- Front-End Developer (Freelance), 2024 - Present
+- Web Developer Intern, 2023 - 2024
+- Junior Web Developer, 2022 - 2023
+
+Education:
+- B.Sc. in Computer Science & Engineering, 2020 - 2024
+- HSC (Science), 2018 - 2020
+- SSC (Science), 2016 - 2018
