@@ -34,14 +34,6 @@ body {
 	padding: 0px 2vw;
 }
 
-.logo {
-	width: 55px;
-	height: 40px;
-	border-radius: 10px;
-	cursor: pointer;
-	background: var(--accent);
-}
-
 .brand-text {
 	font-size: 20px;
 	font-weight: 700;
