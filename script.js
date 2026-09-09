@@ -173,3 +173,15 @@ if (upperArrow){
         window.location.href('#cv')
     }
 }
+
+const signUpBtn = document.getElementById("signUpBtn");
+const signUpPopup = document.getElementById("signUpPopup");
+const closeBtn = document.getElementById("closeBtn");
+
+signUpBtn.onclick = () => {
+    signUpPopup.style.display = "flex";
+};
+
+closeBtn.onclick = () => {
+    signUpPopup.style.display = "none";
+};
