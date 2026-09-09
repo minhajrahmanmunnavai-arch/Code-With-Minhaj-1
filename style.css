@@ -1216,6 +1216,7 @@ span .paragraph-two {
 	transform: translateY(0px);
 }
 
+
 @media (min-width: 2560px) {
 	.navbar {
 		display: flex;
