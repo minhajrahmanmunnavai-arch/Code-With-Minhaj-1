@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                     <a href="#Experience">Experience</a>
                     <a href="#Contact">Contact</a>
                 </div>
-                <button class="sign-up">Sign Up</button>
+                <button class="sign-up" id="signUpBtn">Sign Up</button>
                 <a class="nav-cta" href="#Contact">Hire Me<span aria-hidden="true">↗</span></a>
             </div>
         </nav>
@@ -474,6 +475,29 @@
             </div>
         </div>
     </footer>
+
+    <div class="signup-popup" id="signUpPopup">
+        <div class="signup-box">
+            <button id="closeBtn">&times;</button>
+            <h2>Creat Account</h2>
+            <form action="" class="signup-form">
+                <div class="email-section name-section">
+                    <span class="form-input-name input-type-name">Name</span>
+                    <input class="input-email" id="inputName" type="email" placeholder="Enter your Name" required>
+                </div>
+                <div class="email-section">
+                    <label class="input-type-name" for="inputEmail">Email</label>
+                    <input class="input-email" id="inputEmail" type="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="email-section password-section">
+                    <label class="input-type-name" for="inputPassword">Password</label>
+                    <input class="input-email" id="inputPassword" type="email" placeholder="Enter a strong Password"
+                        required>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
