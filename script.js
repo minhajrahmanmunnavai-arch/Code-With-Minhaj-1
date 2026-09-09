@@ -180,7 +180,7 @@ if (upperArrow){
 if (onclickEmail) {
     onclickEmail.onclick =function() {
         console.log('email clicked')
-        location.href('mailto:minhajrahaman71@gmail.com','_blank')
+        location.href="mailto:minhajrahaman71@gmail.com";
     }
 }
 
