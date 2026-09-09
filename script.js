@@ -175,15 +175,6 @@ if (upperArrow){
     }
 }
 
-//email click action
-// const onclickEmail= document.getElementById('onclickEmail');   //email click action
-
-// if (onclickEmail) {
-//     onclickEmail.onclick =function() {
-//         console.log('email clicked')
-//         location.href="mailto:minhajrahaman71@gmail.com";
-//     }
-// }
 
 const signUpBtn = document.getElementById("signUpBtn");
 const signUpPopup = document.getElementById("signUpPopup");
