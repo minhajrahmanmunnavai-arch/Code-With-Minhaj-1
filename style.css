@@ -40,6 +40,10 @@ body {
 	cursor: default;
 }
 
+a{
+	text-decoration: none;
+}
+
 .navbar {
 	display: flex;
 	align-items: center;
