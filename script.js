@@ -133,6 +133,7 @@ const facebookLink = document.getElementById('facebookLink');   // facebook butt
 const linkedInLink = document.getElementById('linkedInLink');   //linkedin button action
 const youtubeLink = document.getElementById('youtubeLink');     //youtube button action
 const upperArrow = document.getElementById('upperArrow');       //upper button action
+const onclickEmail= document.getElementById('onclick-email');   //email click action
 
 // Download button action
 
@@ -171,6 +172,14 @@ if (youtubeLink){
 if (upperArrow){
     upperArrow.onclick=function(){
         window.location.href('#cv')
+    }
+}
+
+//email click action
+
+if (onclickEmail) {
+    onclickEmail.onclick =function() {
+        window.location.href('mailto:minhajrahaman71@gmail.com','_blank')
     }
 }
 
