@@ -6,7 +6,8 @@
 }
 
 .signup-popup {
-    display: none; /* ডিফল্টভাবে এটি বন্ধ থাকবে */
+    display: none;
+    /* ডিফল্টভাবে এটি বন্ধ থাকবে */
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +26,7 @@
     width: 100%;
     border: 2px solid gray;
     border-radius: 20px;
-	box-shadow: 0 5px 5px rgba(17, 22, 21, 0.1);
+    box-shadow: 0 5px 5px rgba(17, 22, 21, 0.1);
 }
 
 button#closeBtn {
@@ -40,9 +41,9 @@ button#closeBtn {
     transition: transform 180ms ease, background 180ms ease;
 }
 
-button#closeBtn:hover{
+button#closeBtn:hover {
     background: #e2ff84;
-	transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 h2 {
@@ -95,7 +96,59 @@ button.submit-button {
     transition: transform 180ms ease, background 180ms ease;
 }
 
-button.submit-button:hover{
+button.submit-button:hover {
     background: #e2ff84;
-	transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+@media (max-width:414px) {
+    button#closeBtn {
+        padding: 5px 9px;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border: none;
+        background: #d6f36b;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 180ms ease, background 180ms ease;
+    }
+
+    .signup-box {
+        height: 450px;
+        max-width: 300px;
+        background: hsl(212, 31%, 81%);
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 20px;
+        box-shadow: 0 5px 5px rgba(17, 22, 21, 0.1);
+    }
+
+    .input-type-name {
+        font-size: 15px;
+        margin-top: 16px;
+        color: black;
+    }
+
+    .input-email {
+        height: 35px;
+        width: 250px;
+        padding: 0px 15px;
+        font-size: 12px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background: #f7f4f4;
+        margin: 10px 0px;
+    }
+
+    button.submit-button {
+        font-size: 15px;
+        padding: 7px 100px;
+        border: none;
+        border-radius: 20px;
+        background: #d6f36b;
+        margin: 15px 0px;
+        cursor: pointer;
+        transition: transform 180ms ease, background 180ms ease;
+    }
 }
