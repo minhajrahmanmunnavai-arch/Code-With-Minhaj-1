@@ -179,7 +179,7 @@ if (upperArrow){
 
 if (onclickEmail) {
     onclickEmail.onclick =function() {
-        window.location.href('mailto:minhajrahaman71@gmail.com','_blank')
+        location.href('mailto:minhajrahaman71@gmail.com','_blank')
     }
 }
 
