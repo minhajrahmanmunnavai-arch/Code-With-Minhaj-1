@@ -179,3 +179,33 @@ signUpBtn.onclick = () => {
 closeBtn.onclick = () => {
     signUpPopup.style.display = "none";
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const socialTrigger = document.getElementById("socialTrigger");
+    const socialOverlay = document.getElementById("socialOverlay");
+    const socialPopup = document.getElementById("socialPopup");
+    const popupClose = document.getElementById("popupClose");
+
+    // Open popup
+    socialTrigger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        socialOverlay.classList.add("active");
+    });
+
+    // Close with X button
+    popupClose.addEventListener("click", () => {
+        socialOverlay.classList.remove("active");
+    });
+
+    // Click outside popup = close
+    socialOverlay.addEventListener("click", (e) => {
+
+        if (!socialPopup.contains(e.target)) {
+            socialOverlay.classList.remove("active");
+        }
+
+    });
+
+});
+

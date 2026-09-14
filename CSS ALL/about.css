@@ -341,30 +341,6 @@ a {
     gap: 14px;
 }
 
-.social-icon-copy {
-    width: 35px;
-    height: 35px;
-    background-color: hwb(208 86% 3% / 0.726);
-    border-radius: 50%;
-    display: flex;
-    padding: 9px;
-    align-items: center;
-    justify-content: center;
-    color: #4b5563;
-    box-shadow: 0 1px 5px rgba(160, 160, 160, 0.945);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.social-icon-copy:hover {
-    color: #ffffff;
-    background-color: lab(83.5% -1.04 -4.29 / 0.726);
-}
-
-.social-icon-copy:active {
-    transform: scale(0.9);
-}
 
 img.minhaj-image {
     background: #4db7bd;
@@ -784,6 +760,222 @@ strong.email-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* =========================
+   SOCIAL COMMON
+========================= */
+
+.social-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop-socials {
+    display: flex;
+    gap: 8px;
+}
+
+.social-icon,
+.social-trigger {
+    position: relative;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 1px solid #ddd;
+
+    background: #fff;
+    color: #333;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.social-icon:hover,
+.social-trigger:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   TOOLTIP
+========================= */
+
+.tooltip {
+    position: absolute;
+
+    bottom: calc(100% + 8px);
+    left: 50%;
+
+    transform: translateX(-50%) translateY(5px);
+
+    background: #222;
+    color: #fff;
+
+    font-size: 11px;
+    white-space: nowrap;
+
+    padding: 5px 8px;
+    border-radius: 5px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition: 0.2s ease;
+}
+
+.tooltip::after {
+    content: "";
+
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #222;
+}
+
+.social-icon:hover .tooltip,
+.social-trigger:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateX(-50%) translateY(0);
+}
+
+
+/* =========================
+   MOBILE TRIGGER
+========================= */
+
+.social-trigger {
+    display: none;
+
+    border: 1px solid #ddd;
+}
+
+
+/* =========================
+   POPUP OVERLAY
+========================= */
+
+.social-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.25s ease;
+
+    z-index: 9999;
+}
+
+
+/* Popup open */
+
+.social-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =========================
+   POPUP
+========================= */
+
+.social-popup {
+    position: relative;
+
+    width: min(90%, 320px);
+
+    padding: 25px 20px;
+
+    background: #fff;
+
+    border-radius: 14px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+    transform: scale(0.85);
+
+    transition: 0.25s ease;
+}
+
+.social-overlay.active .social-popup {
+    transform: scale(1);
+}
+
+.social-popup h3 {
+    text-align: center;
+
+    margin: 0 0 20px;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.popup-close {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #f2f2f2;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.popup-close:hover {
+    transform: rotate(90deg);
+}
+
+
+/* =========================
+   POPUP SOCIAL ICONS
+========================= */
+
+.popup-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .footer p {
@@ -1257,6 +1449,18 @@ strong.email-link {
     }
 }
 
+@media (max-width: 472px) {
+
+    .desktop-socials {
+        display: none;
+    }
+
+    .social-trigger {
+        display: flex;
+    }
+
+}
+
 @media (max-width:440px) {
     .hero-image img {
         width: 250px;
@@ -1314,6 +1518,13 @@ strong.email-link {
     .info-item strong {
         font-size: 13px;
         color: var(--text-main);
+    }
+
+    .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 20px;
     }
 
 
@@ -1434,7 +1645,7 @@ strong.email-link {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .tech-grid {
