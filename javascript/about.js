@@ -128,26 +128,31 @@ window.addEventListener('resize', updateTimelineProgress);
 
 updateTimelineProgress();
 
-const downloadBtn = document.getElementById('downloadBtn');     // Download button action
 const facebookLink = document.getElementById('facebookLink');   // facebook button action
 const linkedInLink = document.getElementById('linkedInLink');   //linkedin button action
 const youtubeLink = document.getElementById('youtubeLink');     //youtube button action
-const upperArrow = document.getElementById('upperArrow');       //upper button action
+const facebookLinkCopy = document.getElementById('facebookLinkCopy');   // facebook button action
+const linkedInLinkCopy = document.getElementById('linkedInLinkCopy');   //linkedin button action
+const youtubeLinkCopy = document.getElementById('youtubeLinkCopy');     //youtube button action
 
-
-// Download button action
-downloadBtn.addEventListener("click",()=>{
-    window.open('https://drive.google.com/file/d/1t7zT4Zhl77PdLzdbBzpLQg6GLZWT072r/view?usp=sharing', '_blank');
-})
 
 // facebook button action
 facebookLink.addEventListener("click",()=>{
     window.open('https://www.facebook.com/profile.php?id=61593977812787', '_blank');
 })
 
+facebookLinkCopy.addEventListener("click",()=>{
+    window.open('https://www.facebook.com/profile.php?id=61593977812787', '_blank');
+    console.log("button cliked")
+})
+
 
 // linkedin button action
 linkedInLink.addEventListener("click", ()=>{
+    window.open('https://www.linkedin.com/in/minhaj-rahman-126982433/', '_blank');
+})
+
+linkedInLinkCopy.addEventListener("click", ()=>{
     window.open('https://www.linkedin.com/in/minhaj-rahman-126982433/', '_blank');
 })
 
@@ -157,13 +162,9 @@ youtubeLink.addEventListener("click",()=>{
     window.open('https://www.youtube.com/@code_with_minhaj', '_blank');
 })
 
-//upper button action
-
-if (upperArrow){
-    upperArrow.onclick=function(){
-        window.location.href('#cv')
-    }
-}
+youtubeLinkCopy.addEventListener("click",()=>{
+    window.open('https://www.youtube.com/@code_with_minhaj', '_blank');
+})
 
 
 const signUpBtn = document.getElementById("signUpBtn");
@@ -172,6 +173,7 @@ const closeBtn = document.getElementById("closeBtn");
 
 signUpBtn.onclick = () => {
     signUpPopup.style.display = "flex";
+    console.log("buttonl clicked")
 };
 
 closeBtn.onclick = () => {

@@ -10,33 +10,38 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="./CSS ALL/style.css">
+    <link rel="stylesheet" href="./CSS ALL/signup.css">
 </head>
 
 <body>
     <header class="site-header">
         <nav class="navbar" aria-label="Primary navigation">
-            <a class="brand" href="#top" aria-label="Code With Minhaj home">
-                <span class="brand-text">Code With Minhaj</span>
-            </a>
+            <div class="logo">
+                <img class="logo-icon" src="./assets/image/logo/logo.svg" alt="Logo">
+            </div>
+
+            <div class="search-bar">
+                <input class="search" type="text" placeholder="Type Here">
+            </div>
 
             <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
                 <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
                 <span class="sr-only">Open menu</span>
             </button>
-
             <div class="nav-menu" id="primary-menu">
                 <div class="nav-links">
-                    <a href="#Home">Home</a>
-                    <a href="#About">About</a>
-                    <a href="#Skills">Skills</a>
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="about-link">About</a>
                     <a href="#Projects">Projects</a>
-                    <a href="#Experience">Experience</a>
                     <a href="#Contact">Contact</a>
                 </div>
-                <button class="sign-up" id="signUpBtn">Sign Up</button>
-                <a class="nav-cta" href="#Contact">Hire Me<span aria-hidden="true">↗</span></a>
+
+                <div class="cta-buttons">
+
+                    <button class="sign-up" id="signUpBtn">Sign Up</button>
+                    <a class="nav-cta" href="#Contact">Hire Me<span aria-hidden="true">↗</span></a>
+                </div>
             </div>
         </nav>
     </header>
@@ -403,7 +408,8 @@
                         <div class="info-list">
                             <div class="contact-info-main-link">
                                 <img src="assets/image/about me logo/email.svg" alt="User" class="user-icon">
-                                <a href="mailto:minhajrahaman71@gmail.com" class="oneclick-email" id="onclickEmail">minhajrahaman71@gmail.com</a>
+                                <a href="mailto:minhajrahaman71@gmail.com" class="oneclick-email"
+                                    id="onclickEmail">minhajrahaman71@gmail.com</a>
                             </div>
                             <div class="contact-info-main-link">
                                 <img src="assets/image/about me logo/phone.svg" alt="User" class="user-icon">
@@ -470,7 +476,6 @@
             <div class="right-section">
                 <span class="paragraph-one">Designed & Developed by <span class="paragraph-two">Minhaj
                         Rahman</span></span>
-                <div class="upper-arrow" id="upperArrow">&#8593;</div>
             </div>
         </div>
     </footer>
@@ -482,7 +487,7 @@
             <form action="" class="signup-form">
                 <div class="email-section name-section">
                     <span class="form-input-name input-type-name">Name</span>
-                    <input class="input-email" id="inputName" type="email" placeholder="Enter your Name" required>
+                    <input class="input-email" id="inputName" type="username" placeholder="Enter your Name" required>
                 </div>
                 <div class="email-section">
                     <label class="input-type-name" for="inputEmail">Email</label>
@@ -490,7 +495,7 @@
                 </div>
                 <div class="email-section password-section">
                     <label class="input-type-name" for="inputPassword">Password</label>
-                    <input class="input-email" id="inputPassword" type="email" placeholder="Enter a strong Password"
+                    <input class="input-email" id="inputPassword" type="password" placeholder="Enter a strong Password"
                         required>
                 </div>
                 <button type="submit" class="submit-button">Submit</button>
