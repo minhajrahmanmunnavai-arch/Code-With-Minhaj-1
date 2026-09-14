@@ -534,6 +534,9 @@ img.minhaj-image {
     font-size: 0.8rem;
     color: var(--accent-green);
     font-weight: 600;
+    padding: 2px 5px;
+    background: #6721d3;
+    border-radius: 5px;
 }
 
 .edu-card p {

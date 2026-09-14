@@ -1697,6 +1697,12 @@ span .paragraph-two {
 		min-height: 46px;
 		margin-top: 4px;
 	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 20px;
+		flex-direction: column;
+	}
 }
 
 @media (max-width: 768px) {
