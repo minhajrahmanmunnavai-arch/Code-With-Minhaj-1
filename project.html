@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code With Minhaj - My Projects</title>
     <link rel="stylesheet" href="./CSS ALL/project.css">
+    <link rel="stylesheet" href="./CSS ALL/signup.css">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -74,8 +75,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="./assets/image/project photo/project photo.jfif"
-                    alt="Workspace">
+                <img src="./assets/image/project photo/project photo.jfif" alt="Workspace">
             </div>
         </section>
 
@@ -129,8 +129,7 @@
             <!-- Project 2 -->
             <div class="project-card">
                 <div class="card-img">
-                    <img src="https://i.pinimg.com/1200x/35/1e/82/351e824a4a3084f45967b034172ab06d.jpg"
-                        alt="Portfolio">
+                    <img src="https://i.pinimg.com/1200x/35/1e/82/351e824a4a3084f45967b034172ab06d.jpg" alt="Portfolio">
                     <span class="tag-top">Portfolio</span>
                 </div>
                 <div class="card-content">
@@ -182,7 +181,8 @@
                 </div>
                 <div class="card-content">
                     <h3>Todo List App</h3>
-                    <p>A simple and clean todo app with add, delete, and mark as complete functionality. Uses localStorage to save data.
+                    <p>A simple and clean todo app with add, delete, and mark as complete functionality. Uses
+                        localStorage to save data.
                     </p>
                     <div class="tech-tags">
                         <span class="html">HTML5</span>
@@ -201,8 +201,7 @@
             <!-- Project 2 -->
             <div class="project-card">
                 <div class="card-img">
-                    <img src="./assets/image/project photo/move search app.jfif"
-                        alt="Portfolio">
+                    <img src="./assets/image/project photo/move search app.jfif" alt="Portfolio">
                     <span class="tag-top">API Project</span>
                 </div>
                 <div class="card-content">
@@ -225,13 +224,13 @@
             <!-- Project 3 -->
             <div class="project-card">
                 <div class="card-img">
-                    <img src="./assets/image/project photo/landing page design.jfif"
-                        alt="Weather App">
+                    <img src="./assets/image/project photo/landing page design.jfif" alt="Weather App">
                     <span class="tag-top">UI Design</span>
                 </div>
                 <div class="card-content">
                     <h3>Product Landing Page</h3>
-                    <p>A modern landing page design for a digital product with smooth animations and responsive layout.</p>
+                    <p>A modern landing page design for a digital product with smooth animations and responsive layout.
+                    </p>
                     <div class="tech-tags">
                         <span class="html">HTML5</span>
                         <span class="css">CSS3</span>
@@ -352,7 +351,29 @@
 
                 </div>
     </footer>
-    <script src="script.js"></script>
+    <div class="signup-popup" id="signUpPopup">
+        <div class="signup-box">
+            <button id="closeBtn">&times;</button>
+            <h2>Creat Account</h2>
+            <form action="" class="signup-form">
+                <div class="email-section name-section">
+                    <span class="form-input-name input-type-name">Name</span>
+                    <input class="input-email" id="inputName" type="username" placeholder="Enter your Name" required>
+                </div>
+                <div class="email-section">
+                    <label class="input-type-name" for="inputEmail">Email</label>
+                    <input class="input-email" id="inputEmail" type="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="email-section password-section">
+                    <label class="input-type-name" for="inputPassword">Password</label>
+                    <input class="input-email" id="inputPassword" type="password" placeholder="Enter a strong Password"
+                        required>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+     <script src="./javascript/project.js"></script>
 </body>
 
 </html>
