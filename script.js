@@ -136,31 +136,31 @@ const upperArrow = document.getElementById('upperArrow');       //upper button a
 
 
 // Download button action
-downloadBtn.addEventListener("click",()=>{
+downloadBtn.addEventListener("click", () => {
     window.open('https://drive.google.com/file/d/1t7zT4Zhl77PdLzdbBzpLQg6GLZWT072r/view?usp=sharing', '_blank');
 })
 
 // facebook button action
-facebookLink.addEventListener("click",()=>{
+facebookLink.addEventListener("click", () => {
     window.open('https://www.facebook.com/profile.php?id=61593977812787', '_blank');
 })
 
 
 // linkedin button action
-linkedInLink.addEventListener("click", ()=>{
+linkedInLink.addEventListener("click", () => {
     window.open('https://www.linkedin.com/in/minhaj-rahman-126982433/', '_blank');
 })
 
 
 //youtube button action
-youtubeLink.addEventListener("click",()=>{
+youtubeLink.addEventListener("click", () => {
     window.open('https://www.youtube.com/@code_with_minhaj', '_blank');
 })
 
 //upper button action
 
-if (upperArrow){
-    upperArrow.onclick=function(){
+if (upperArrow) {
+    upperArrow.onclick = function () {
         window.location.href('#cv')
     }
 }
@@ -177,3 +177,42 @@ signUpBtn.onclick = () => {
 closeBtn.onclick = () => {
     signUpPopup.style.display = "none";
 };
+
+
+
+const signupForm = document.querySelector(".signup-form");
+
+const nameInput = document.querySelector("#inputName");
+const emailInput = document.querySelector("#inputEmail");
+const passwordInput = document.querySelector("#inputPassword");
+
+signupForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const user = {
+        name: nameInput.value,
+        email: emailInput.value,
+        password: passwordInput.value
+    };
+
+    console.log("Sending:", user);
+
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/users", {
+            method: "POST",
+
+            headers: {
+                "Content-Type": "application/json"
+            },
+
+            body: JSON.stringify(user)
+        });
+
+        const data = await response.json();
+
+        console.log("Server response:", data);
+
+    } catch (error) {
+        console.log("Error:", error);
+    }
+});
