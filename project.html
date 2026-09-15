@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code With Minhaj - My Projects</title>
+    <link rel="stylesheet" href="./CSS ALL/project.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <div class="logo">
+                <img class="logo-icon" src="./assets/image/logo/logo.svg" alt="Logo">
+            </div>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+                <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+                <span class="sr-only">Open menu</span>
+            </button>
+            <div class="nav-menu" id="primary-menu">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="about-link">About</a>
+                    <a href="project.html">Projects</a>
+                    <a href="#Contact">Contact</a>
+                </div>
+
+                <div class="cta-buttons">
+
+                    <button class="sign-up" id="signUpBtn">Sign Up</button>
+                    <a class="nav-cta" href="#Contact">Hire Me<span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Projects Section -->
+    <main class="projects-container">
+        <!-- Top Hero Section -->
+        <section class="projects-hero">
+            <div class="hero-content">
+                <span class="badge">My Projects</span>
+                <h1>My Projects</h1>
+                <p>Here are some of the projects I've built so far. Each project helped me learn something new and
+                    improve my skills in web development.</p>
+
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <div>
+                            <h2>6+</h2>
+                            <p>Total Projects</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-code"></i>
+                        <div>
+                            <h2>4+</h2>
+                            <p>Live Websites</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-brands fa-github"></i>
+                        <div>
+                            <h2>5+</h2>
+                            <p>GitHub Repositories</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/image/project photo/project photo.jfif"
+                    alt="Workspace">
+            </div>
+        </section>
+
+        <!-- Filter & Sorting Bar -->
+        <section class="filter-bar">
+            <div class="filter-buttons">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Web Apps</button>
+                <button class="filter-btn">Landing Pages</button>
+                <button class="filter-btn">UI/UX Design</button>
+                <button class="filter-btn">JavaScript</button>
+                <button class="filter-btn">React (Coming Soon)</button>
+            </div>
+            <div class="sort-dropdown">
+                <span>Sort by</span>
+                <select>
+                    <option>Latest</option>
+                    <option>Oldest</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Project Cards Grid -->
+        <section class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="card-img">
+                    <img src="https://cdn.dribbble.com/userupload/43543539/file/still-4ea8410a6cb7f3dcd984d6638b8e1f3a.png?resize=1600x1200"
+                        alt="E-Commerce">
+                    <span class="tag-top">E-Commerce</span>
+                </div>
+                <div class="card-content">
+                    <h3>E-Mox (E-Commerce Website)</h3>
+                    <p>A responsive e-commerce website with product listings, cart, wishlist and user authentication.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="html">HTML5</span>
+                        <span class="css">CSS3</span>
+                        <span class="js">JavaScript</span>
+                        <span class="bs">Bootstrap</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="live-demo">Live Demo <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" class="github-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="card-img">
+                    <img src="https://i.pinimg.com/1200x/35/1e/82/351e824a4a3084f45967b034172ab06d.jpg"
+                        alt="Portfolio">
+                    <span class="tag-top">Portfolio</span>
+                </div>
+                <div class="card-content">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>My own portfolio website to showcase my skills, projects and experience. Built with modern and
+                        clean UI.</p>
+                    <div class="tech-tags">
+                        <span class="html">HTML5</span>
+                        <span class="css">CSS3</span>
+                        <span class="js">JavaScript</span>
+                        <span class="bs">Bootstrap</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="live-demo">Live Demo <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" class="github-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="card-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbEXMY3w6n-aVYA3laTik9BrLsAA7VZwO8DrEZKZOPfnfP7q-LMPhISX4j&s=10"
+                        alt="Weather App">
+                    <span class="tag-top">JavaScript App</span>
+                </div>
+                <div class="card-content">
+                    <h3>Weather Forecast App</h3>
+                    <p>A simple weather app that shows current weather and 5-day forecast using OpenWeather API.</p>
+                    <div class="tech-tags">
+                        <span class="html">HTML5</span>
+                        <span class="css">CSS3</span>
+                        <span class="js">JavaScript</span>
+                        <span class="api">API</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="live-demo">Live Demo <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" class="github-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="card-img">
+                    <img src="https://cms.boardmix.com/images/articles/what-is-a-to-do-list-top-ten-apps.png"
+                        alt="E-Commerce">
+                    <span class="tag-top">Javascript App</span>
+                </div>
+                <div class="card-content">
+                    <h3>Todo List App</h3>
+                    <p>A simple and clean todo app with add, delete, and mark as complete functionality. Uses localStorage to save data.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="html">HTML5</span>
+                        <span class="css">CSS3</span>
+                        <span class="js">JavaScript</span>
+                        <span class="bs">LocalStorage</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="live-demo">Live Demo <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" class="github-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="card-img">
+                    <img src="./assets/image/project photo/move search app.jfif"
+                        alt="Portfolio">
+                    <span class="tag-top">API Project</span>
+                </div>
+                <div class="card-content">
+                    <h3>Move Search App</h3>
+                    <p>Search movies, get details and watch trailers using the TMDB API.</p>
+                    <div class="tech-tags">
+                        <span class="html">HTML5</span>
+                        <span class="css">CSS3</span>
+                        <span class="js">JavaScript</span>
+                        <span class="bs">API</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="live-demo">Live Demo <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" class="github-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="card-img">
+                    <img src="./assets/image/project photo/landing page design.jfif"
+                        alt="Weather App">
+                    <span class="tag-top">UI Design</span>
+                </div>
+                <div class="card-content">
+                    <h3>Product Landing Page</h3>
+                    <p>A modern landing page design for a digital product with smooth animations and responsive layout.</p>
+                    <div class="tech-tags">
+                        <span class="html">HTML5</span>
+                        <span class="css">CSS3</span>
+                        <span class="js">JavaScript</span>
+                        <span class="api">GSAP</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="live-demo">Live Demo <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" class="github-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Call to Action Banner -->
+        <section class="cta-banner">
+            <div class="cta-text">
+                <div>
+                    <h3>Have an idea for a project?</h3>
+                    <p>I'm always open to work on new opportunities, collaborations and exciting projects.</p>
+                </div>
+            </div>
+            <button class="cta-btn">Contact Me <i class="fa-solid fa-arrow-right"></i></button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo">
+                <img class="logo-icon-copy" src="./assets/image/logo/logo.svg" alt="Logo">
+            </div>
+            <p>&copy; 2025 Minhaj Rahaman. All rights reserved.</p>
+            <div class="social-wrapper">
+
+                <!-- Mobile Social Trigger -->
+                <button class="social-trigger" id="socialTrigger">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <span class="tooltip">Social Links</span>
+                </button>
+
+                <!-- Desktop Social Icons -->
+                <div class="desktop-socials">
+
+                    <a href="https://www.facebook.com/profile.php?id=61593977812787" class="social-icon social-link"
+                        target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <span class="tooltip">Facebook</span>
+                    </a>
+
+                    <a href="https://github.com/" class="social-icon social-link" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <span class="tooltip">GitHub</span>
+                    </a>
+
+                    <a href="https://x.com/" class="social-icon social-link" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <span class="tooltip">X</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/minhaj-rahman-126982433/" class="social-icon social-link"
+                        target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span class="tooltip">LinkedIn</span>
+                    </a>
+
+                    <a href="https://www.youtube.com/@code_with_minhaj" class="social-icon social-link" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span class="tooltip">YouTube</span>
+                    </a>
+
+                </div>
+
+
+                <!-- Social Popup -->
+                <div class="social-overlay" id="socialOverlay">
+
+                    <div class="social-popup" id="socialPopup">
+
+                        <button class="popup-close" id="popupClose">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                        <h3>Social Links</h3>
+
+                        <div class="popup-socials">
+
+                            <a href="#" class="social-icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <span class="tooltip" id="facebookLinkCopy">Facebook</span>
+                            </a>
+
+                            <a href="#" class="social-icon">
+                                <i class="fa-brands fa-github"></i>
+                                <span class="tooltip " id="">GitHub</span>
+                            </a>
+
+                            <a href="#" class="social-icon">
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <span class="tooltip " id="">X</span>
+                            </a>
+
+                            <a href="#" class="social-icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <span class="tooltip" id="linkedInLinkCopy">LinkedIn</span>
+                            </a>
+
+                            <a href="#" class="social-icon">
+                                <i class="fa-brands fa-youtube"></i>
+                                <span class="tooltip" id="youtubeLinkCopy">YouTube</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
